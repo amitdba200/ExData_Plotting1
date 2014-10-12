@@ -14,7 +14,7 @@ plot2<-function()
 	## define the output file name and its width in pixels
  	png("plot2.png",width = 480, height = 480)
 	## plot the graph set Y-axis label define graph type
-	plot(data$Date,as.numeric(as.character(data$Global_active_power)), type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+	plot(data$Date,data$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 	## set the device off
 	dev.off()
 	}
