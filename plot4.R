@@ -39,7 +39,7 @@ plot4<-function()
 	## Add legends to this graph
 	legend( x="topright", legend=c("Sub_Metering_1","Sub_Metering_2","Sub_Metering_3"),col=c("black","red","blue"), lwd=1, lty=1,bty="n")
 	## plot the graph set Y-axis label define graph type
-	##plot(data$Date,as.numeric(as.character(data$Global_reactive_power)), type = "l", xlab = "", ylab = "Global_reactive_power")
+	plot(data$Date,as.numeric(as.character(data$Global_reactive_power)), type = "l", xlab = "", ylab = "Global_reactive_power")
 	## set the device off
 	dev.off()
 }
