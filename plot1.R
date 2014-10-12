@@ -1,3 +1,5 @@
+## This function read a csv file for input data 
+## This function create a plot file plot1.png as output as per project1 requirements.
 plot1<-function()
 	{
 	## Reads data from the input household_power_consumption file
@@ -8,9 +10,9 @@ plot1<-function()
 	data<-subset(data,as.character(data[[1]])!="?")
 	## define the file name and its width in pixels
 	png("plot1.png",width = 480, height = 480)
-	## plot the histogram set X-axis label and histogra title
+	## plot the histogram set X-axis label and histogram title
 	hist(as.numeric(as.character(data$Global_active_power)),xlab="Global Active Power(kilowatts)",main="Global Active Power",col="red")
-	## set the devide off
+	## set the device off
 	dev.off()
 }
 
